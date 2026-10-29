@@ -1,0 +1,39 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    int marks[6] = {45, 72, 38, 90, 50, 65};
+
+    int total = 0;
+    int passes = 0;
+    int failures = 0;
+    double average;
+
+    cout << "These are the marks: " << endl;
+
+    for (int i = 0; i < 6; i++) {
+        cout << marks[i] << endl;
+
+        // Add the current mark to the total.
+        total += marks[i];
+
+        if (marks[i] >= 50) {
+            passes++;
+        } else {
+            failures++;
+        }
+    }
+    //All marks have now been processed.
+    average = total / 6.00;
+
+    cout << "The total is: " << total << endl;
+    cout << "The average is: " << average << endl;
+    cout << "Passes: " << passes << endl;
+    cout << "Failures: " << failures << endl;
+
+    return 0;
+
+    return 0;
+}
